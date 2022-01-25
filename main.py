@@ -33,7 +33,7 @@ def helping(message):
 # Функция, обрабатывающая команду /list
 @bot.message_handler(commands=["list"])
 
-def list(message):
+def listing(message):
     bot.send_message(
         message.chat.id, 'Ваш список: 1)Остальгия; 2)Microsoft word for windows(10). Для того чтобы получить доступ к файлам вышлите мне их номер в списке.')
     bot.register_next_step_handler(message, list_files)
